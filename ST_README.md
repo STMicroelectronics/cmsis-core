@@ -38,6 +38,7 @@ In this table, you can find the successive versions of STMicroelectronics **cmsi
 CMSIS core ARM  | CMSIS Core ST | contains also specific Cortex_M Tags 
 --------------- | ------------- | ------------------------------------
 Tag v4.5.0 | Tag v4.5   | v4.5_cm0, v4.5_cm3, v4.5_cm4, v4.5_cm7
+Tag v5.4.0 | Tag v5.4.0 | v5.4.0_cm0, v5.4.0_cm3, v5.4.0_cm4, v5.4.0_cm7, v5.4.0_cm33
 
 ## Troubleshooting
 If you have any issue with the **Software content** of the **cmsis_core** repo, you shall address it directly to Arm (tm) by [filing an issue on Github](https://github.com/ARM-software/CMSIS_5/issues/new)

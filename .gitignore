@@ -3,8 +3,9 @@
 **/__pycache__
 Local_Release/
 CMSIS/Documentation/
-CMSIS/RTOS2/RTX/Library/ARM/MDK/RTX_CM.uvguix.*
-CMSIS/CoreValidation/Tests/build
-CMSIS/CoreValidation/Tests/bootloader/build
 *.uvguix.*
 *.uvmpw.uvgui.*
+*.zip
+output
+#Ignore modules added by the repo script
+Device/ST/

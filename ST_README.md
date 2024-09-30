@@ -22,17 +22,28 @@ Two models of publication are proposed for the STM32Cube embedded software:
 
 ## Description
    
-This **cmsis_core** MCU component repo is one element of the STM32Cube MCUs embedded software packages, providing the **cmsis core** part. 
-
-> [!IMPORTANT]
-> During the successive deliveries from ARM Limited, an update has been introduced with version 5.0. **A break** of directory tree compatibility has been introduced: the files under the `./Include` directory have been moved to directory `./Core/Include`.
-> In order to **keep compatibility**, the **cmsis_core** repository provided by *STMicroelectronics* introduces an `./Include` directory at its root, where there is a copy of the content of the `./Core/Include` directory provided by ARM.
+This **cmsis_core** MCU component repository is one element **common to all** STM32Cube MCU embedded software packages, providing the **cmsis core** part. 
 
 > [!NOTE]
-> From the version 5.1.0, a Core_A/Include has been introduced to support Cortex_A series. However, this has no impact on Cortex-M-based user applications.
+> This repository is a **subset** of the [CMSIS_5/CMSIS](https://github.com/ARM-software/CMSIS_5/tree/develop/CMSIS) directory. Some subdirectories like `./CMSIS/DAP` or `./CMSIS/DoxyGen` have been discarded as not used in the STM32Cube firmware. The `./CMSIS/Driver` subdirectory has also been discarded as it should be replaced by a `../STM32XXxx_HAL_Driver` directory in the complete file tree of a firmware.
+
+> [!NOTE]
+> Starting from version `5.1.0`, a `Core_A/Include` directory has been introduced to support Cortex-A cores. However, this has no impact on Cortex-M-based user applications.
+
+> [!IMPORTANT]
+> Starting from version `5.8.0`, Arm **removed** the precompiled **DSP** libraries from the `./DSP/Lib` subdirectory.
+
+> [!IMPORTANT]
+> During the successive deliveries from ARM Limited, an update has been introduced with version `5.0`. **A break** of directory tree compatibility has been introduced: the files under the `./Include` directory have been moved to anoter directory, `./Core/Include`.
+>
+> In order to **preserve compatibility**, the **cmsis_core** repository provided by *STMicroelectronics* introduces an `./Include` directory at its root, where there is a copy of the content of the `./Core/Include` directory provided by ARM.
 
 > [!TIP]
-> With each official Tag (**e.g.**, `v4.5`), *STMicroelectronics* proposes specific CMSIS Core packages for all supported Cortex-M cores. These specific packages are size-optimized as each one contains only the CMSIS Core files for the targeted Cortex-M. Each specific package is identified by a tag suffixed *_cmX* (**e.g.**, tag `v4.5_cm3` refers to a package containing only version `4.5.0` of CMSIS Core files specific to Cortex-M3 cores, files specific to other Cortex-M cores having been removed).
+> With each official tag (**e.g.**, `v4.5`), specific flavors of the CMSIS Core are proposed, one for each supported Cortex-M core. Each specific flavor is identified by a tag suffixed *_cmX* (**e.g.**, tag `v4.5_cm3` refers to version `4.5.0` of the CMSIS Core specific to Cortex-M3).
+>
+> These specific flavors are **size-optimized** as their `./DSP/Lib` subdirectory, the **most voluminous**, only contains the precompiled libraries for the intended Cortex-M core, those for other Cortex-M cores being removed.
+>
+> All tags suffixed the same are part of a dedicated branch (**e.g.**, `v4.5_cm3`, `v5.4.0_cm3`, `v5.6.0_cm3` are part of the `cm3` branch).
 
 ### Caution 
 

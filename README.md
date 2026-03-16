@@ -1,6 +1,6 @@
 # STM32Cube CMSIS Core Interface MCU Software Component
 
-![latest tag](https://img.shields.io/github/v/tag/STMicroelectronics/cmsis-core.svg?color=brightgreen)
+![tag](https://img.shields.io/badge/tag-6.3.0-brightgreen.svg)
 
 > [!NOTE]
 > The **cmsis_core** repository is delivered to STM32 users. It is **cloned** from ARM Limited, strictly compatible. 
@@ -45,13 +45,9 @@ This repository is a **subset** of the [CMSIS_5/CMSIS](https://github.com/ARM-so
 >
 > All tags suffixed the same are part of a dedicated branch (**e.g.**, `v4.5_cm3`, `v5.4.0_cm3`, `v5.6.0_cm3` are part of the `cm3` branch).
 
-## Release note
-
-Details about the content of this release are available in the release note [here](https://github.com/STMicroelectronics/cmsis-core/blob/master/st_readme.txt).
-
 ## Compatibility information
 
-Please refer to the **release note** in the firmware repository for the STM32 series you are using ([list](https://github.com/STMicroelectronics/STM32Cube_MCU_Overall_Offer/blob/master/README.md#stm32cube-mcu-packages)). It is **important** to use a **consistent set** of software component versions (i.e., CMSIS, HAL-LL, BSP, MW) as specified in the release note.
+Please refer to the **release note** in the firmware repository for the STM32 series you are using. It is **important** to use a **consistent set** of software component versions (i.e., CMSIS, HAL-LL, BSP, MW) as specified in the release note.
 
 ## Feedback and contributions
 
